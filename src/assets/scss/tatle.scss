@@ -1,0 +1,42 @@
+.title {
+    &_fz12 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &_fz14{
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: bold;
+    }
+    &_fz16{
+        font-size: 16px;
+        line-height: 24px;        
+    }
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &_fz48 {
+        font-size: 48px;   
+        line-height: 60px;     
+    }
+    &_fz36{
+        font-size: 36px;
+        line-height: 60px;   
+    } 
+    &_subheader {
+        position: relative;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    &_header {
+        margin-top: 6px;
+        text-align: center;
+    }
+    &__circle {
+        position: absolute;
+        top: -14px;
+        // left: 508px;
+        z-index: -1;
+    } 
+}

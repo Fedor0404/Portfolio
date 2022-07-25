@@ -1,0 +1,7 @@
+{
+    "name": "dosjein/vkdeepmine",
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "dev-master"
+    }
+}

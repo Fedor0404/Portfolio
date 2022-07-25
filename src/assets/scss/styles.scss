@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap";
+@import "variables.scss";
+@import "btn.scss";
+@import "tatle.scss";
+@import "media.scss";
+
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}

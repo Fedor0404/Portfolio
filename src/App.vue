@@ -1,28 +1,44 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+    <div id="app">
+        <SideMenu />
+        <SlidePanel />
+        <MyPromo />
+        <MyResume />
+        <MyTools />
+        <MyPortfolio />
+        <MyContact />
+    </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import MyPromo from './components/MyPromo.vue';
+import MyResume from './components/MyResume.vue';
+import MyTools from './components/MyTools.vue';
+import MyPortfolio from './components/MyPortfolio.vue';
+import MyContact from './components/MyContact/MyContact.vue';
+import SlidePanel from './components/SlidePanel.vue';
+import SideMenu from './components/SideMenu.vue';
 
 export default {
-  name: "App",
-  components: {
-    HelloWorld,
-  },
+    name: 'App',
+    components: {
+        MyPromo,
+        MyResume,
+        MyTools,
+        MyPortfolio,
+        MyContact,
+        SlidePanel,
+        SideMenu,
+    },
 };
 </script>
 
 <style lang="scss">
+//To-Do Надо подумать как убрать импорт main-colir от сюда
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 </style>

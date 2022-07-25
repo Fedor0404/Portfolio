@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Host: portfolio.clean-control.ru

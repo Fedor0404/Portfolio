@@ -1,0 +1,10 @@
+{
+    "asi": false,
+    "esversion": 6,
+    "vue/multi-word-component-names": [
+        "error",
+        {
+            "ignores": ["default"]
+        }
+    ]
+}
