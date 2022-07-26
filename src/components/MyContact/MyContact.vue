@@ -8,24 +8,24 @@
                     :header="'Свяжитеся со мной'"
                 />
                 <div class="contact__wreapper">
-                    <div class="contact__text title title_fz14">
-                        Любым удобным для вас способом:
-                    </div>
                     <div class="contact__social">
                         <div class="contact__link">
-                            <a href="#" class="contact__link-item">
+                            <a
+                                href="mailto:kormachew@mail.ru"
+                                target="_blank"
+                                class="contact__link-item"
+                            >
                                 <img
-                                    src="../../assets/img/kontaсt/Facebook.svg"
-                                    alt="facefook"
+                                    src="../../assets/img/kontaсt/Email.svg"
+                                    target="_blank"
+                                    alt="Email"
                                 />
                             </a>
-                            <a href="#" class="contact__link-item">
-                                <img
-                                    src="../../assets/img/kontaсt/Instagram.svg"
-                                    alt="instagram"
-                                />
-                            </a>
-                            <a href="#" class="contact__link-item">
+                            <a
+                                href="https://t.me/kormachewf"
+                                target="_blank"
+                                class="contact__link-item"
+                            >
                                 <img
                                     src="../../assets/img/kontaсt/Telegram.svg"
                                     alt="telegram"
@@ -107,19 +107,20 @@
                 <div class="contact__wreapper">
                     <div class="contact__social">
                         <div class="contact__link">
-                            <a href="#" class="contact__link-item">
+                            <a
+                                href="mailto:kormachew@mail.ru"
+                                class="contact__link-item"
+                            >
                                 <img
-                                    src="../../assets/img/kontaсt/Facebook.svg"
+                                    src="../../assets/img/kontaсt/Email.svg"
                                     alt="facefook"
                                 />
                             </a>
-                            <a href="#" class="contact__link-item">
-                                <img
-                                    src="../../assets/img/kontaсt/Instagram.svg"
-                                    alt="instagram"
-                                />
-                            </a>
-                            <a href="#" class="contact__link-item">
+                            <a
+                                href="https://t.me/kormachewf"
+                                target="_blank"
+                                class="contact__link-item"
+                            >
                                 <img
                                     src="../../assets/img/kontaсt/Telegram.svg"
                                     alt="telegram"
@@ -136,19 +137,20 @@
                 <div class="contact__wreapper">
                     <div class="contact__social">
                         <div class="contact__link">
-                            <a href="#" class="contact__link-item">
+                            <a
+                                href="mailto:kormachew@mail.ru"
+                                class="contact__link-item"
+                            >
                                 <img
-                                    src="../../assets/img/kontaсt/Facebook.svg"
+                                    src="../../assets/img/kontaсt/Email.svg"
                                     alt="facefook"
                                 />
                             </a>
-                            <a href="#" class="contact__link-item">
-                                <img
-                                    src="../../assets/img/kontaсt/Instagram.svg"
-                                    alt="instagram"
-                                />
-                            </a>
-                            <a href="#" class="contact__link-item">
+                            <a
+                                href="https://t.me/kormachewf"
+                                target="_blank"
+                                class="contact__link-item"
+                            >
                                 <img
                                     src="../../assets/img/kontaсt/Telegram.svg"
                                     alt="telegram"
@@ -182,8 +184,6 @@ export default {
 
     methods: {
         async onSubmit() {
-            // e.preventDefault();
-
             let response = await fetch('sendmail.php', {
                 method: 'POST',
                 body: JSON.stringify(this.form),
@@ -254,7 +254,7 @@ export default {
     &__link {
         display: flex;
         justify-content: space-around;
-        width: 150px;
+        width: 110px;
 
         &-item {
             img {

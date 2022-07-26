@@ -1,6 +1,5 @@
 <template>
     <div id="app">
-        <SideMenu />
         <SlidePanel />
         <MyPromo />
         <MyResume />
@@ -17,7 +16,6 @@ import MyTools from './components/MyTools.vue';
 import MyPortfolio from './components/MyPortfolio.vue';
 import MyContact from './components/MyContact/MyContact.vue';
 import SlidePanel from './components/SlidePanel.vue';
-import SideMenu from './components/SideMenu.vue';
 
 export default {
     name: 'App',
@@ -28,7 +26,6 @@ export default {
         MyPortfolio,
         MyContact,
         SlidePanel,
-        SideMenu,
     },
 };
 </script>

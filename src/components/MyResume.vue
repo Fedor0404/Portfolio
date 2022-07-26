@@ -2,7 +2,6 @@
     <div class="resume">
         <div class="container">
             <HeaderPattern :header="'Чем я буду полезен'" :subheader="'Опыт'" />
-
             <div class="resume__wreapper">
                 <div class="resume__column">
                     <div class="resume__column-items">
@@ -66,7 +65,7 @@
                                         <div class="resume__item-head">
                                             <div class="resume__item-icon">
                                                 <img
-                                                    src="../assets/img/icons/resume/University.svg"
+                                                    src="../assets/img/icons/resume/hardSkills.svg"
                                                     alt="university"
                                                 />
                                             </div>
@@ -94,7 +93,7 @@
                                         <div class="resume__item-head">
                                             <div class="resume__item-icon">
                                                 <img
-                                                    src="../assets/img/icons/resume/Courses.svg"
+                                                    src="../assets/img/icons/resume/softSkills.svg"
                                                     alt="university"
                                                 />
                                             </div>
@@ -231,9 +230,11 @@
                                     <div
                                         class="resume__item-location title title_fz12"
                                     >
-                                        <a v-bind:href="puzzleup.site.href">{{
-                                            puzzleup.site.visible
-                                        }}</a>
+                                        <a
+                                            target="_blank"
+                                            v-bind:href="puzzleup.site.href"
+                                            >{{ puzzleup.site.visible }}</a
+                                        >
                                     </div>
 
                                     <div
@@ -316,9 +317,11 @@
                                     <div
                                         class="resume__item-location title title_fz12"
                                     >
-                                        <a v-bind:href="agu24.site.href">{{
-                                            agu24.site.visible
-                                        }}</a>
+                                        <a
+                                            target="_blank"
+                                            v-bind:href="agu24.site.href"
+                                            >{{ agu24.site.visible }}</a
+                                        >
                                     </div>
 
                                     <div
@@ -401,9 +404,11 @@
                                     <div
                                         class="resume__item-location title title_fz12"
                                     >
-                                        <a v-bind:href="mc.site.href">{{
-                                            mc.site.visible
-                                        }}</a>
+                                        <a
+                                            target="_blank"
+                                            v-bind:href="mc.site.href"
+                                            >{{ mc.site.visible }}</a
+                                        >
                                     </div>
 
                                     <div
@@ -507,8 +512,8 @@ export default {
                 name: 'PuzzleUp – мобильная игра по сбору пазлов online  на скорость',
                 post: 'Основатель | август 2015 – октябрь 2016',
                 site: {
-                    visible: 'Скрин на сайт и Instagram',
-                    href: 'https://clean-control.ru/',
+                    visible: 'Скрины игровых экранов и Instagram',
+                    href: 'https://disk.yandex.ru/d/LNqvsluIHcRZ4A',
                 },
                 duties: [
                     '- Разработка игровой механики и скетч макетов-интерфейса',
@@ -531,7 +536,7 @@ export default {
                 post: 'Основатель | июль 2013  – август 2014',
                 site: {
                     visible: 'Скрин сайта',
-                    href: 'https://clean-control.ru/',
+                    href: 'https://disk.yandex.ru/d/zblwiVtzLjv5WQ',
                 },
                 duties: [
                     '- Работа с поставщиками',
@@ -550,8 +555,8 @@ export default {
                 name: 'Melody-club.ru – бизнес по закачке мелодий на телефоны',
                 post: 'Основатель | 2003  – 2007',
                 site: {
-                    visible: 'Скрин сайта',
-                    href: 'https://clean-control.ru/',
+                    visible: 'Материалы не сохранились',
+                    href: '#',
                 },
                 duties: [
                     '- Ведение переговоров с поставщиками оборудования',
@@ -571,19 +576,6 @@ export default {
             arrowUp: false,
         };
     },
-    mounted() {
-        // wordBg() {
-        //     let p = this.$refs.skills;
-        //     console.log(p);
-        //     for (let i = 0; i < p.length; i++) {
-        //         p[i].innerHTML = p[i].innerHTML
-        //             .split(' ')
-        //             .map((w) => '<span class="bc-silver">' + w + '</span>')
-        //             .join(' ');
-        //     }
-        // }
-        this.wordBg;
-    },
     methods: {
         openItems(e) {
             let event = e.target.id;
@@ -600,16 +592,6 @@ export default {
                 this.arrowUp = false;
             }
             this.isOpen === null ? (this.isOpen = event) : (this.isOpen = null);
-        },
-        wordBg() {
-            let p = this.$refs.skills;
-            console.log(p);
-            for (let i = 0; i < p.length; i++) {
-                p[i].innerHTML = p[i].innerHTML
-                    .split(' ')
-                    .map((w) => '<span class="bc-silver">' + w + '</span>')
-                    .join(' ');
-            }
         },
     },
 };

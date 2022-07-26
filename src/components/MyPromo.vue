@@ -8,23 +8,6 @@
                 Меня зовут Федор Кормачев
             </div>
             <h1 class="promo__title title title_fz48">I am web developer</h1>
-            <div class="promo__btns">
-                <button class="promo__link">
-                    <a href="#">Портфолио</a>
-
-                    <svg
-                        viewBox="-5 -5 110 110"
-                        preserveAspectRatio="none"
-                        aria-hidden="true"
-                    >
-                        <path
-                            d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0"
-                        />
-                    </svg>
-                </button>
-
-                <a href="#" class="promo__link purple">Про меня</a>
-            </div>
         </div>
     </div>
 </template>
@@ -71,19 +54,5 @@ export default {
             text-decoration: none;
         }
     }
-
-    // &.purple {
-    //     &:hover {
-    //         color: $main-color;
-    //         text-decoration: none;
-    //     }
-    // }
 }
-// button {
-//     a {
-//         &:hover {
-//             color: #e5e5e5;
-//             text-decoration: none;
-//         }
-//     }
 </style>
