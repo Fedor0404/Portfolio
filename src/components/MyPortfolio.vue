@@ -89,7 +89,7 @@
                 <a class="portfolio__item moviesapp">
                     <div class="portfolio__item-header">
                         <div class="portfolio__item-paragraf">
-                            Приложения поиска фильмов, формирования списка
+                            Приложение поиска фильмов, формирования списка
                             понравившихся фильмов
                             <div class="portfolio__item-link">
                                 Исходники <br />
@@ -121,7 +121,7 @@
                 <a class="portfolio__item">
                     <div class="portfolio__item-header">
                         <div class="portfolio__item-paragraf">
-                            Программы питания с калькуляторам калорий
+                            Программы питания с калькулятором калорий
                             <div class="portfolio__item-link">
                                 Исходники <br />
                                 <a
@@ -172,7 +172,7 @@
                 <a class="portfolio__item crm">
                     <div class="portfolio__item-header">
                         <div class="portfolio__item-paragraf">
-                            CRM система автоматизации автомоечных комплексов
+                            CRM-система автоматизации автомоечных комплексов
                             (продукт в разработке)
                             <div class="portfolio__item-link">
                                 Сайт <br />

@@ -80,10 +80,11 @@
                                                 Vue.Js - junior SQL - junior
                                                 WordPress - junior UI -
                                                 Битрикс24 - Adobe Photoshop -
-                                                Google Analytics - Яндекс
-                                                Метрика - Яндекс Директ -
+                                                Google Analytics -
+                                                Яндекс.Метрика - Яндекс.Директ -
                                                 SMM-продажи - SEO - Английский
-                                                язык Pre-intermediate
+                                                язык Pre-intermediate - Jira -
+                                                Trello - Scrum
                                             </div>
                                         </div>
                                     </div>
@@ -125,6 +126,91 @@
                         пыт работы
                     </h3>
                     <ul>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img
+                                            src="../assets/img/icons/resume/Developer.svg"
+                                            alt="university"
+                                        />
+                                    </div>
+                                    <h4 class="title title_fz14">
+                                        {{ pm.name }}
+                                    </h4>
+                                    <div
+                                        class="resume__item-location title title_fz12"
+                                    >
+                                        {{ pm.post }}
+                                    </div>
+                                    <div
+                                        class="resume__item-location title title_fz12"
+                                    >
+                                        <a v-bind:href="pm.site.href">{{
+                                            pm.site.visible
+                                        }}</a>
+                                    </div>
+
+                                    <div
+                                        class="resume__item-more title title_fz12 pt-2"
+                                        @click="openItems"
+                                        id="10"
+                                    >
+                                        Подробнее
+                                        <i
+                                            id="10"
+                                            class="bi"
+                                            v-bind:class="{
+                                                'bi-caret-down':
+                                                    isOpen !== pm.id
+                                                        ? true
+                                                        : false,
+                                                'bi-caret-up':
+                                                    isOpen == pm.id
+                                                        ? true
+                                                        : false,
+                                            }"
+                                        ></i>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="resume__item-body title title_fz12"
+                                    v-if="isOpen == 10"
+                                >
+                                    <div
+                                        class="resume__duties title_fz12"
+                                        style="font-weight: bold"
+                                    >
+                                        Основные обязанности:
+                                    </div>
+
+                                    <div>
+                                        <div
+                                            class="ps-2"
+                                            v-for="item in pm.duties"
+                                            :key="item"
+                                        >
+                                            {{ item }}
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="resume__duties title_fz12 pt-2"
+                                        style="font-weight: bold"
+                                    >
+                                        Достижения:
+                                    </div>
+                                    <div
+                                        class="ps-2"
+                                        v-for="item in pm.gols"
+                                        :key="item"
+                                    >
+                                        {{ item }}
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li>
                             <div class="resume__item">
                                 <div class="resume__item-head">
@@ -483,28 +569,50 @@ export default {
     name: 'MyResume',
     data() {
         return {
+            pm: {
+                id: 10,
+                name: 'Kolos studio – веб студия',
+                post: 'Project manager | октябрь 2022 г. - настоящее время',
+                site: {
+                    visible: 'www.kolosstudio.ru',
+                    href: 'https://www.kolosstudio.ru/',
+                },
+
+                duties: [
+                    '- Согласование работ с заказчиком',
+                    '- Проектирование, декомпозиция, запуск спринтов в работу',
+                    '- Определение приоритетов, оценка, создание и распределение задач',
+                    '- Отслеживание состояния и прогресса проекта, ресурсов',
+                    '- Обработка обратной связи от заказчика, транслирование ее команде',
+                    '- Составление и согласование смет',
+                ],
+                gols: [
+                    '- Своевременно реализация спринтов',
+                    '- Реализовал 95% целей, запланированных на 4 квартал 2022 год',
+                    '- Согласование с заказчиком рефактиринга МП',
+                ],
+            },
             srm: {
                 id: 1,
                 name: 'Сlean-Сontrol.ru – CRM- система для предприятий, оказывающих услуги автовладельцам',
-                post: 'Основатель | 2010 г. - настоящее время',
+                post: 'Основатель | 2010 г. - июль 2022 г.',
                 site: {
                     visible: 'www.clean-control.ru',
                     href: 'https://clean-control.ru/',
                 },
 
                 duties: [
-                    '- Более 900 реализованных копий',
                     '- Организация работы программистов при ограниченном бюджете',
                     '- Постановка ТЗ для реализации новых функций программного продукта',
                     '- Контроль работы службы технической поддержки',
                     '- Разработка и оценка экономическойцелесообразности реализации функционала, поступающего по обратной связи',
-                    '- Работа с рекламными площадками по закупке трафик',
+                    '- Работа с рекламными площадками по закупке трафика',
                     '- Интеграция со сторонними сервисами',
                 ],
                 gols: [
                     '- Более 900 реализованных копий',
                     '- Топ-3 в поисковых выдачах яндекс, google',
-                    '- 90 % клиентов при открытии новых филиалов, совершают повторные покупки',
+                    '- 90 % клиентов при открытии новых филиалов совершают повторные покупки',
                 ],
             },
             puzzleup: {
@@ -516,8 +624,8 @@ export default {
                     href: 'https://disk.yandex.ru/d/LNqvsluIHcRZ4A',
                 },
                 duties: [
-                    '- Разработка игровой механики и скетч макетов-интерфейса',
-                    '- Работа с аутсорс компанией-разработчиком,  подготовка договоров и NDA соглашений',
+                    '- Разработка игровой механики и скетч-макетов интерфейса',
+                    '- Работа с аутсорс компанией-разработчиком,  подготовка договоров и NDA-соглашений',
                     '- Контроль выполнения ТЗ',
                     '- Рекламная компания в MyTarget и Facebook/ Instagram',
                     '- Работа с магазином приложений AppStore',
@@ -540,8 +648,8 @@ export default {
                 },
                 duties: [
                     '- Работа с поставщиками',
-                    '- Формирования call центра ',
-                    '- Формирования службы доставки',
+                    '- Формирование call центра ',
+                    '- Формирование службы доставки',
                     '- Привлечение трафика ',
                 ],
                 gols: [
@@ -565,8 +673,8 @@ export default {
                     '- Формирование коллектива',
                 ],
                 gols: [
-                    '- 7 торговых точек по г. Красноярск',
-                    '- Формирования франшизы и ее продажа по России и странам СНГ',
+                    '- 7 торговых точек по г. Красноярску',
+                    '- Формирование франшизы и ее продажа по России и странам СНГ',
                     '- Разработка программного обеспечения для автоматизации и контроля работы оператора на точках по закачке мелодий',
                 ],
             },
@@ -579,8 +687,9 @@ export default {
     methods: {
         openItems(e) {
             let event = e.target.id;
-            console.log(event);
-
+            this.isOpen === event
+                ? (this.isOpen = event)
+                : (this.isOpen = null);
             if (
                 this.arrowDown == true &&
                 (this.isOpen === event || this.isOpen === null)

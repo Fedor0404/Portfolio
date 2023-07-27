@@ -5,7 +5,7 @@
             <div v-if="show === 1">
                 <HeaderPattern
                     :subheader="'Контакты'"
-                    :header="'Свяжитеся со мной'"
+                    :header="'Свяжитесь со мной'"
                 />
                 <div class="contact__wreapper">
                     <div class="contact__social">
@@ -103,7 +103,7 @@
                 </div>
             </div>
             <div v-else-if="show === 2" class="contact__send">
-                <HeaderPattern :header="'Спасибо, форма отправленна'" />
+                <HeaderPattern :header="'Спасибо, форма отправлена'" />
                 <div class="contact__wreapper">
                     <div class="contact__social">
                         <div class="contact__link">
@@ -132,7 +132,7 @@
             </div>
             <div v-else-if="show === 3" class="contact__send">
                 <HeaderPattern
-                    :header="'Письмо не отправленно, что то пошло не так, как планировалось( Попробуйте связаться другими способами!'"
+                    :header="'Письмо не отправленно, что то пошло не так, как планировалось( Попробуйте связаться другими способом!'"
                 />
                 <div class="contact__wreapper">
                     <div class="contact__social">

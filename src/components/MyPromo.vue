@@ -5,9 +5,12 @@
                 <img src="../assets/img/icons/Circle.svg" alt="circle" />
             </div>
             <div class="promo__behind title title_fz16">
-                Меня зовут Федор Кормачев
+                Меня зовут Фёдор Кормачев
             </div>
-            <h1 class="promo__title title title_fz48">I am web developer</h1>
+            <h1 class="promo__title title title_fz48">
+                I am web developer <br />
+                and project manager
+            </h1>
         </div>
     </div>
 </template>

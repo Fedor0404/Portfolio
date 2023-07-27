@@ -95,12 +95,103 @@
                             class="tools__item-img"
                         />
                         <div class="tools__item-header title_fz14">
-                            Boostrap
+                            Bootstrap
                         </div>
                         <div class="tools__item-descr">
                             Bootstrap, самая популярной в мире платформой для
                             создания адаптивных, ориентированных на мобильные
                             устройства сайтов.
+                        </div>
+                    </div>
+                </div>
+                <div class="tools__item">
+                    <div class="tools__wreaper" id="node">
+                        <img
+                            src="../assets/img/icons/tools/tailwind.svg"
+                            alt="tailwind"
+                            class="tools__item-img"
+                        />
+                        <div class="tools__item-header title_fz14">
+                            Tailwind
+                        </div>
+                        <div class="tools__item-descr">
+                            Фреймворк CSS с открытым исходным кодом.
+                        </div>
+                    </div>
+                </div>
+                <div class="tools__item">
+                    <div class="tools__wreaper" id="node">
+                        <img
+                            src="../assets/img/icons/tools/figma.svg"
+                            alt="figma"
+                            class="tools__item-img"
+                        />
+                        <div class="tools__item-header title_fz14">Figma</div>
+                        <div class="tools__item-descr">
+                            Figma — онлайн-редактор, в котором удобно
+                            проектировать интерфейсы, создавать макеты сайтов,
+                            мобильных приложений, презентации, иллюстрации,
+                            логотипы и анимацию.
+                        </div>
+                    </div>
+                </div>
+                <div class="tools__item">
+                    <div class="tools__wreaper" id="node">
+                        <img
+                            src="../assets/img/icons/tools/photoshop.svg"
+                            alt="figma"
+                            class="tools__item-img"
+                        />
+                        <div class="tools__item-header title_fz14">
+                            Photoshop
+                        </div>
+                        <div class="tools__item-descr">
+                            Photoshop — Многофункциональный растровый
+                            графический редактор
+                        </div>
+                    </div>
+                </div>
+                <div class="tools__item">
+                    <div class="tools__wreaper" id="node">
+                        <img
+                            src="../assets/img/icons/tools/scrum.svg"
+                            alt="scrum"
+                            class="tools__item-img"
+                        />
+                        <div class="tools__item-header title_fz14">Scrum</div>
+                        <div class="tools__item-descr">
+                            Легкий фреймворк, который помогает людям, командам и
+                            организациям создавать ценность с помощью адаптивных
+                            решений комплексных проблем.
+                        </div>
+                    </div>
+                </div>
+                <div class="tools__item">
+                    <div class="tools__wreaper" id="node">
+                        <img
+                            src="../assets/img/icons/tools/trello.svg"
+                            alt="trello"
+                            class="tools__item-img"
+                        />
+                        <div class="tools__item-header title_fz14">Trello</div>
+                        <div class="tools__item-descr">
+                            Облачная программа для управления проектами.Trello
+                            использует парадигму для управления проектами,
+                            известную как канбан.
+                        </div>
+                    </div>
+                </div>
+                <div class="tools__item">
+                    <div class="tools__wreaper" id="node">
+                        <img
+                            src="../assets/img/icons/tools/jira.svg"
+                            alt="jira"
+                            class="tools__item-img"
+                        />
+                        <div class="tools__item-header title_fz14">Jira</div>
+                        <div class="tools__item-descr">
+                            Jira – это программный инструмент для управления
+                            проектами. Подходит для agile-команд.
                         </div>
                     </div>
                 </div>
